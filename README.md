@@ -1,5 +1,84 @@
-# DevOps-HiveBox-Project
-This Repo is for building DevOps Hive-Box Project 
+# HiveBox - DevOps End-to-End Hands-On Project
 
-# Project Link
-https://devopsroadmap.io/projects/hivebox/
+<p align="center">
+  <a href="https://devopsroadmap.io/projects/hivebox" style="display: block; padding: .5em 0; text-align: center;">
+    <img alt="HiveBox - DevOps End-to-End Hands-On Project" border="0" width="90%" src="https://devopsroadmap.io/img/projects/hivebox-devops-end-to-end-project.png" />
+  </a>
+</p>
+
+## Acknowledgment
+
+Special thanks to **Eng. [Ahmed AbouZaid](https://github.com/aabouzaid)** for proposing the HiveBox project idea. Their vision and thoughtful design helped shape a meaningful and practical learning experience, combining real-world DevOps concepts with hands-on application. This project wouldn't have been the same without their valuable input.
+
+
+The project aims to cover the whole Software Development Life Cycle (SDLC). That means each phase will cover all aspects of DevOps, such as planning, coding, containers, testing, continuous integration, continuous delivery, infrastructure, etc.
+
+
+<br/>
+<p align="center">
+  <a href="https://devopsroadmap.io/projects/hivebox/" imageanchor="1">
+    <img src="https://img.shields.io/badge/Get_Started_Now-559e11?style=for-the-badge&logo=Vercel&logoColor=white" />
+  </a><br/>
+</p>
+
+---
+
+## Introduction
+
+Developed an end-to-end DevOps project to build a scalable RESTful API for tracking environmental sensor data from openSenseMap, customized to support beekeepers with daily monitoring tasks. Built a Flask-based application delivering JSON-based APIs integrated with Redis-Valkey for caching and MinIO for object storage. Implemented a complete DevOps workflow using Jenkins, Docker, Kubernetes, Terraform, Ansible, Helm, and ArgoCD, including CI pipelines with automated testing and Hadolint, and deployed AWS infrastructure with GitOps-based Kubernetes deployment while designing the system for high scalability and performance.
+
+
+
+---
+
+## Implementation
+
+### Phase 1:  Welcome to the DevOps World
+<p align="center">
+  <a href="https://devopsroadmap.io/projects/hivebox/" imageanchor="1">
+    <img width="90%" src="https://devopsroadmap.io/assets/images/module-01-overview-e3d852c2bde8272515f2c444221cdbfd.png" />
+  </a><br/>
+</p>
+<p align="center">
+  <a href="https://devopsroadmap.io/projects/hivebox/" imageanchor="1">
+    <img width="90%" src="https://devopsroadmap.io/assets/images/hivebox-architecture-phase-01-d6d6c38343a1da0391c5cd6705ec2051.png" />
+  </a><br/>
+</p>
+
+- [Create GitHub account](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github) (if you don't have one), then [fork this repository](https://github.com/DevOpsHiveHQ/devops-hands-on-project-hivebox/fork) and start from there.
+- [Create GitHub project board](https://docs.github.com/en/issues/planning-and-tracking-with-projects/creating-projects/creating-a-project) for this repository (use `Kanban` template).
+- Each phase should be presented as a pull request against the `main` branch. Don’t push directly to the main branch!
+- Document as you go. Always assume that someone else will read your project at any phase.
+- You can get senseBox IDs by checking the [openSenseMap](https://opensensemap.org/) website. Use 3 senseBox IDs close to each other (you can use the following [5eba5fbad46fb8001b799786](https://opensensemap.org/explore/5eba5fbad46fb8001b799786), [5c21ff8f919bf8001adf2488](https://opensensemap.org/explore/5c21ff8f919bf8001adf2488), and [5ade1acf223bd80019a1011c](https://opensensemap.org/explore/5ade1acf223bd80019a1011c)). Just copy the IDs, you will need them in the next steps.
+
+---
+
+### Phase 2: Basics - DevOps Core
+
+<p align="center">
+  <a href="https://devopsroadmap.io/projects/hivebox/" imageanchor="1">
+    <img width="90%" src="https://devopsroadmap.io/assets/images/module-02-overview-22e040ce248a0b72495dbc2cea9f6986.png" />
+  </a><br/>
+</p>
+<p align="center">
+  <a href="https://devopsroadmap.io/projects/hivebox/" imageanchor="1">
+    <img width="90%" src="https://devopsroadmap.io/assets/images/hivebox-architecture-phase-02-7a31715c4e08bae9a4b9c43d6a8d6127.png" />
+  </a><br/>
+</p>
+
+### 2.1 Tools
+- Git
+- VS code
+- Docker
+### 2.2 Steps
+
+- Build a Docker image, run and test it locally.
+```sh
+docker build -t HiveBox-image .
+docker run --name HiveBox hivebox-image
+```
+- The output should be: 
+```sh
+HiveBox App Version: v0.0.1
+```
+---
