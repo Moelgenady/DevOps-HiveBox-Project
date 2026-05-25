@@ -6,6 +6,9 @@ on:
     pull_request:
         branches: [ main, development]
 
+# Enable Node.js 24 runtime for GitHub Actions to avoid Node 20 deprecation warnings
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 # Lint → Test → Build
 jobs:
@@ -53,12 +56,6 @@ jobs:
         runs-on: ubuntu-latest
         needs: lint
 
-
-        # Enable Node.js 24 runtime for GitHub Actions to avoid Node 20 deprecation warnings
-        env:
-         FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
-
         steps:
             - name: checkout code
               uses: actions/checkout@v4
@@ -80,11 +77,6 @@ jobs:
         name: Build Docker Image from the exisiting dockerfile
         runs-on: ubuntu-latest
         needs: test
-
-        # Enable Node.js 24 runtime for GitHub Actions to avoid Node 20 deprecation warnings
-        env:
-         FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 
         steps:
             - name: checkout code
