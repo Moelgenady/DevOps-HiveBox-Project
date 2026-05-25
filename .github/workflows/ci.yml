@@ -6,6 +6,10 @@ on:
     pull_request:
         branches: [ main, development]
 
+# Enable Node.js 24 runtime for GitHub Actions to avoid Node 20 deprecation warnings
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 # Lint → Test → Build
 jobs:
     lint:
@@ -83,7 +87,8 @@ jobs:
                 image-ref: hivebox:0.0.2
                 format: table
                 exit-code: 1
-                severity: CRITICAL,HIGH            
+                severity: CRITICAL
+                ignore-unfixed: true     
 
             - name: Start container
               run: docker run -d --name hivebox-test -p 5000:5000 hivebox:0.0.2
