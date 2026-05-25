@@ -105,6 +105,6 @@ jobs:
                     echo $RESPONSE | grep -q '"version"'
             
             - name: Stop container
-              run: docker stop hivebox 
+              run: docker stop hivebox-test
     
             
