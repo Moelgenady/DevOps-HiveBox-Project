@@ -2,6 +2,18 @@
 
 Phase 3 focuses on improving code quality, container best practices, automated testing, and Continuous Integration (CI) for HiveBox.
 
+<p align="center">
+  <a href="https://devopsroadmap.io/projects/hivebox/" imageanchor="1">
+    <img width="90%" src="https://devopsroadmap.io/assets/images/module-03-overview-3269b01a0471696a3a1e5a86b4c03a4f.png" />
+  </a><br/>
+</p>
+<p align="center">
+  <a href="https://devopsroadmap.io/projects/hivebox/" imageanchor="1">
+    <img width="90%" src="https://devopsroadmap.io/assets/images/hivebox-architecture-phase-03-f62020476900f5db5a97f27e43e9ab8b.png" />
+  </a><br/>
+</p>
+
+
 This phase introduces:
 - Dockerfile linting with Hadolint
 - Python code analysis with Pylint
